@@ -9,8 +9,8 @@ function Navbar(props){
                     <img src={PetLogo} alt=""/>
                 </div>
                 <div className="iconSearch">
-                    <MdSearch />
-                    <input type="text" placeholder="search..."/>
+                    <div className="icon"><MdSearch size={35}/></div>
+                    <input type="text" placeholder="Search..."/>
                 </div>
                 <div className="Login"></div>
             </div>

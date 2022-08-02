@@ -1,7 +1,7 @@
 import './LoginUi.css';
 import profile from "../../assets/images/275801831_504262154742148_4582866294198810923_n.jpg";
-import email from "../../assets/images/email.jpg";
-import pass from "../../assets/images/pass.png";
+import { FaRegEnvelope } from 'react-icons/fa'
+import { BsKey } from 'react-icons/bs'
 function LoginUi() {
   return (
     <div className="main">
@@ -18,19 +18,19 @@ function LoginUi() {
          <div>
            <h1>Login Page</h1>
            <div>
-             <img src={email} alt="email" className="email"/>
-             <input type="text" placeholder="user name" className="name"/>
+             <div className="email"> <FaRegEnvelope size={25} /> </div> 
+             <input type="text" placeholder="User name" className="name"/>
            </div>
            <div className="second-input">
-             <img src={pass} alt="pass" className="email"/>
-             <input type="password" placeholder="user name" className="name"/>
+             <div className="email"> <BsKey size={25} /> </div>
+             <input type="password" placeholder="Password" className="name"/>
            </div>
           <div className="login-button">
           <button>Login</button>
           </div>
 
             <p className="link">
-              <a href="#">Forgot password ?</a> Or<a href="#">Sign Up</a>
+              <a href="#">Forgot password ?</a> Or <a href="#"> Sign Up</a>
             </p>
 
 
